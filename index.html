@@ -1,20 +1,45 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- meta tags, links to css, etc. -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Final Project</title>
+    <title>Datazon</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
     <!-- visible content goes here -->
-	<h1>Final Project</h1>
-	<p>See README.md for info</p>
+     <dialog id="cookies">
+        <h3>We value your privacy</h3>
+        <p>We use cookies to improve your shopping experience.</p>
+        <p>
+            <button id="acceptCookies">Accept all</button>
+            <button id="rejectCoookies">Reject all</button>
+        </p>
+     </dialog>
+     
+    <div id="store">
+        <h1>Datazon</h1>
+        <p>Everything you need, all in one place.</p>
+        <hr>
+
+        <h2>Shop</h2>
+        <div id="products"></div>
+        <hr>
+
+        <h2>Checkout</h2>
+        <p id="cart">Your cart is empty.</p>
+        <p>Full name<br><input id="name"></p>
+        <p>Email<br><input id="email"></p>
+        <p>Address<br><input id="address"></p>
+        <p><button id="placeOrder">Place order</button></p>
+    </div>
 
     <!-- load javascript after the page elements render -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
